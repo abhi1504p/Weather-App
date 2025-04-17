@@ -52,20 +52,14 @@ dev_dependencies:
   get:
 
 
-  geocoding:
-  geolocator:
-  sleek_circular_slider:
-  http:
-  get:
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-  assets:
-    - assets/icons/
-    - assets/weather/
+
 
 
   # The following line ensures that the Material Icons font is
