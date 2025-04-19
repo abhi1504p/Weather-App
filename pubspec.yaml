@@ -50,6 +50,7 @@ dev_dependencies:
   sleek_circular_slider:
   http:
   get:
+  intl:
 
 
 
