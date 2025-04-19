@@ -1,10 +1,9 @@
 import 'dart:convert';
-
-import 'package:weatherapp/api/api_key_example.dart';
 import 'package:weatherapp/models/Weather_data_current.dart';
 import 'package:weatherapp/models/weather_data.dart';
 import 'package:http/http.dart' as http;
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 class FetchWeatherApi {
   WeatherData? weatherData;
 
@@ -30,8 +29,6 @@ class FetchWeatherApi {
 }
 
 String apiUrl(var lat, var log) {
-  String uri;
-  uri =
-      "https://api.openweathermap.org/data/2.5/weather?appid=$apiKey&lon=$log&lat=$lat";
-  return uri;
+  final apiKey = dotenv.env['API_KEY'] ?? '';
+  return "https://api.openweathermap.org/data/2.5/weather?appid=$apiKey&lon=$log&lat=$lat";
 }

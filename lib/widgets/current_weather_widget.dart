@@ -11,6 +11,7 @@ class CurrentWeatherWidget extends StatelessWidget {
     return Container(
       child:
       Column(children: [
+      Text("${weatherDataCurrent.current.name}"),
         temperatueAreaWidget(),
          currentWeatherMoreDetail(),
       ],),
